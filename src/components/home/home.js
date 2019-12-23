@@ -1,8 +1,7 @@
 import React from "react";
-import {useAuthUser} from "../auth/AuthUser";
-import Toolbar from '../toolbar/toolbar';
-export const HomePage = props => {
-const { setLogged } = useAuthUser()
+import Toolbar from '../toolbar/Toolbar';
+
+export const Home = () => {
   return (
     <div>
       <Toolbar />

@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import "./toolbar.css";
+import "./Toolbar.css";
 import { useAuthUser } from "../auth/AuthUser";
 
 const Toolbar = props => {
@@ -24,21 +23,20 @@ const renderToolBarOptions = (props, logged, setLogged) => {
         return (
             <div className="toolbar_navigation-items">
                 <ul>
-                <li>
+                    <li>
                         <a href="/home">Home</a>
                     </li>
                     <li>
                         <a href="/dashboard">Dashboard</a>
                     </li>
                     <li>
-                        <a href="/"><button
-                            onClick={() => {
+                        <a href="/home">
+                            <button onClick={() => {
                                 setLogged(false)
-                                props.history.push("/home");
                             }}
                         >
                             Logout
-      </button></a>
+                            </button></a>
                     </li>
                 </ul>
             </div>

@@ -1,12 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Toolbar from '../toolbar/toolbar';
+import Toolbar from '../toolbar/Toolbar';
 
-dashboard.propTypes = {
-    
-};
-
-function dashboard(props) {
+const Dashboard = () => {
     return (
         <div>
             <Toolbar />
@@ -18,4 +13,4 @@ function dashboard(props) {
     );
 }
 
-export default dashboard;
+export default Dashboard;
